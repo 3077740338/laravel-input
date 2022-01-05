@@ -1,0 +1,34 @@
+{
+    "name": "learn/laravel-input",
+    "description": "private package",
+    "keywords": ["laravel", "framework", "Learn"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jiang Tao",
+            "email": "3077740338@qq.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "voku/anti-xss": "~4.1.31",
+        "voku/portable-utf8": "^5.4.51"
+    },
+    "autoload": {
+        "psr-4": {
+            "Learn\\": "src/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Learn\\Input\\InputServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
